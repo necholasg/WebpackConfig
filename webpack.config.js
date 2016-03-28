@@ -31,6 +31,10 @@ const common = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
+  output: {
+    path: PATHS.build,
+    filename: '[name].js'
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack demo'
